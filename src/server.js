@@ -10,7 +10,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
+  if (msg.content.startsWith('ping ')) {
     msg.reply('Pong!');
   }
 });
